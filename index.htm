@@ -1,48 +1,75 @@
  <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>agro forte, futuro sustentável.</title>
+    <title>Blog da Ale</title>
 </head>
-<button>❤️<span>0</span></button>
 <body>
-    <div class="container"><img src="img/imagem2.jpg" width="30%" height="30%" alt="foca nos estudos" ></div>
- <h1>Só falta um trimestre </h1>
- <h2>E a gente está como?</h2>
- <h1>Sedentos pelo saber  </h1>
- <div class="container"></<img src="img/imagem2.jpg" width="30%" height="30%" alt="foca nos estudos" ></div>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+<button>❤️<span>0</span></button>
+        <style>
+            header {
+                background-color: #183C63;
+                color: #FFFFFF;
+                text-align: center;
+                max-width: 800px;
+                margin: 0 auto;
+            }
 
+            main {
+                background-color: #FFFFFF;
+                color: #183C63;
+            }
+
+            img {
+                width: 80px;
+                height: 80px;
+            }
+
+            p {
+                font-weight: bold;
+            }
+
+            .artigo-autor {
+                font-weight: bold;
+            }
+        </style>
+    </header>
+
+    <main>
+        <img src="imagem-blog (2).png" alt="livro com símbolos de tecnologia">
+
+
+        <h2>Meu primeiro post</h2>
+        <p>Por: Marcelo Paludetto</p>
+        <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+            tecnologia.</p>
+            <button>❤️<span>0</span></button>
+            <button>❤️<span>0</span></button>
+    </main>
+<script>
+ const botoes = document.querySelectorAll("button");
+ botoes.forEach(function (botao) {
+        let curtiu = false;
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            if (curtiu === false){
+                texto.textContent++;
+                curtiu = true;
+            } else{
+                texto.textContent--;
+                curtiu = false;
+            }
+        }
+    })
+     </script>
 </body>
+
 </html>
-
-
-<img src="imagem-blog.png" alt="">
-img {
-width: 80px;
-height: 80px;
-}
- 
-P {
-font-weight: bold;
-}
-
-.artigo-autor {
-font-weight: bold;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
